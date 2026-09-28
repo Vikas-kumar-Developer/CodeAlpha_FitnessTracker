@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Fitness Tracker</h1>
+        <p class="subtitle">Track your daily fitness activities</p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h2>Steps</h2>
+                <p id="steps">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Calories</h2>
+                <p id="calories">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Water</h2>
+                <p id="water">0 L</p>
+            </div>
+
+        </div>
+
+        <div class="activity-box">
+
+            <h2>Add Activity</h2>
+
+            <label for="activity">Activity</label>
+            <select id="activity">
+                <option value="Walking">Walking</option>
+                <option value="Running">Running</option>
+                <option value="Cycling">Cycling</option>
+                <option value="Exercise">Exercise</option>
+            </select>
+
+            <label for="duration">Duration (minutes)</label>
+            <input type="number" id="duration" min="1" placeholder="Enter duration">
+
+            <button id="addActivityBtn">Add Activity</button>
+
+        </div>
+
+        <div class="activity-list">
+            <h2>Today's Activities</h2>
+            <ul id="activityList">
+                <li>No activity added yet.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
